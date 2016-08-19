@@ -13,8 +13,6 @@ print(templist, file=sys.stderr)
 
 if n == 0:
     print("0")
-elif n == 1:
-    mini = temps
 else:
     mini = 9999
     diff_mini = abs(mini)
