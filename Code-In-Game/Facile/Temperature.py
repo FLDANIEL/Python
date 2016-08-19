@@ -13,8 +13,10 @@ print(templist, file=sys.stderr)
 
 if n == 0:
     print("0")
+elif n == 1:
+    mini = temps
 else:
-    mini = 10
+    mini = 9999
     diff_mini = abs(mini)
     
     for t in templist:
@@ -27,5 +29,8 @@ else:
         elif diff == diff_mini and t > mini:
             mini = t
             diff_mini = abs(diff)
+        elif diff == diff_mini and t == mini:
+            mini = t
+            diff_mini = abs(diff)
             
-print(mini)
+    print(mini)
